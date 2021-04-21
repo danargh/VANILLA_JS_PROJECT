@@ -8,6 +8,7 @@ const btns = document.querySelectorAll(".btn");
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const styles = e.currentTarget.classList;
+    // aku masih bingung dengan penggunaan currentTarget
     if (styles.contains("decrease")) {
       count--;
     } else if (styles.contains("increase")) {
